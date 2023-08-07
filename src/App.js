@@ -3,6 +3,9 @@ import './App.css';
 import Home from './components/Home';
 import Portfolio from './components/portfolio';
 import ContactMe from './components/ContactMe';
+import Parallax from './components/Parallax';
+
+
 
 function App() {
   return (
@@ -10,13 +13,13 @@ function App() {
       <div>
       <Navbar></Navbar>
       </div>
-        <div className=" bg-black w-full h-screen">
+        <div className=" bg-black  w-full h-screen">
         <Home/>
         </div>
-         <div className=' bg-orange-500 w full h-screen'>
-          <Portfolio></Portfolio>
+         <div className=' '>
+          <Parallax/>
          </div>
-          <div className=' bg-lime-700 w full h-screen'>
+          <div className=' bg-black w-full h-screen'>
             <ContactMe></ContactMe>
           </div>
 
@@ -25,3 +28,5 @@ function App() {
 }
 
 export default App;
+
+
