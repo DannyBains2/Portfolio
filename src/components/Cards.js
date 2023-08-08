@@ -1,10 +1,11 @@
-import { useRef, useEffect} from "react"
-import { motion, useAnimation, useInView } from "framer-motion"
+import { useRef, useEffect, useState} from "react"
+import { motion, useAnimation, useInView, AnimatePresence } from "framer-motion"
 
-export default function Cards(){
+export default function Cards({item}){
     const ref=useRef(null)
     const isInView = useInView(ref, { once: true});
     const mainControls = useAnimation()
+    
 
     useEffect (() => {
         if (isInView) {
@@ -14,16 +15,21 @@ export default function Cards(){
 
     return(
          
-            <motion.div ref={ref} className="  w-1/2 h-1/2 border border-blue-400 rounded-xl"
+            <motion.div ref={ref}  className=" w-5/6 h-5/6 border border-blue-400 rounded-xl  "
         variants={{
-            hidden: {opacity: 0, x: -275},
-            visable: {opacity: 1, x: 0},
+                hidden: {opacity: 0, y: 75},
+                visable: {opacity: 1, y: 0},
         }}
         initial="hidden"
         animate={mainControls}
-        transition={{duration:1.75, delay: 0.75}}
+        transition={{duration:1.25, delay: 1.75}}
         >
-</motion.div>
+            <motion.h2 className="bg-white">{item.title}</motion.h2>
+            <motion.p className="bg-white">{item.subtitle}</motion.p>
+
+    </motion.div>
+
+    
 
     )
 }
