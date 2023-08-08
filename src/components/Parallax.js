@@ -8,8 +8,7 @@ export default function Parallax() {
     offset: ["start start", "end start"],
   });
   const backgroundY = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
-  const textY = useTransform(scrollYProgress, [0, 1], ["0%", 
-  "200%"]);
+
   const starsY = useTransform(scrollYProgress, [0, 1], ["0%", "80%"]);
   const moonY = useTransform(scrollYProgress, [0, 1], ["0%", "150%"]);
 

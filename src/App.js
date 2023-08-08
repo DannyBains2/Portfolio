@@ -3,7 +3,7 @@ import './App.css';
 import Home from './components/Home';
 import Portfolio from './components/portfolio';
 import ContactMe from './components/ContactMe';
-import Parallax from './components/Parallax';
+
 
 
 
@@ -13,11 +13,11 @@ function App() {
       <div>
       <Navbar></Navbar>
       </div>
-        <div className=" bg-black  w-full h-screen">
+        <div className=" bg-gradient-to-b from-[#2b1055] to-[#7597de]  w-full h-screen">
         <Home/>
         </div>
-         <div className='bg-gradient-to-b from-[#2b1055] to-[#7597de] '>
-          <Parallax/>
+         <div className='bg-[#1c0522] w-full h-screen border border-orange-500 flex items-center justify-center'>
+          <Portfolio/>
          </div>
           <div className=' bg-black w-full h-screen'>
             <ContactMe></ContactMe>
