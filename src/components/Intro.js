@@ -7,22 +7,20 @@ function Intro () {
     const isInView = useInView(ref, { once: true});
 
     const mainControls = useAnimation()
-    const slideControls = useAnimation()
-    const contactControls = useAnimation()
-    const moveConControls = useAnimation()
+    // const slideControls = useAnimation()
+    // const contactControls = useAnimation()
+
 
     useEffect (() => {
         if (isInView) {
             mainControls.start("visable")
-            slideControls.start("visable")
-            contactControls.start("visable")
-        } else {
-            moveConControls.start("move")
-        }
+            // slideControls.start("visable")
+            // contactControls.start("visable")
+        } 
     },[isInView]);
 
     return(
-        <div ref={ref} className="flex flex-col  ">
+        <div ref={ref} className="flex flex-col pl-4 ">
             <motion.div 
             className=" text-5xl md:text-8xl"
             variants={{
@@ -42,23 +40,22 @@ function Intro () {
                 visable: {opacity: 1, y: 0},
             }}
             initial="hidden"
-            animate={slideControls}
+            animate={mainControls}
             transition={{duration:1.25, delay: 0.75}}
             >
             Junior Software Developer
             </motion.div>
             <motion.div
-             className=" pt-3"
+             className=" pt-3 text-black  "
              variants={{
                  hidden: {opacity: 0, x: -275},
                  visable: {opacity: 1, x: 0},
-                 move: {opacity: 1, y: -100},
              }}
              initial="hidden"
-             animate={contactControls}
+             animate={mainControls}
              transition={{duration:1.25, delay: 1.25}}
             >
-            <Button>Contact Me</Button>
+            <Button >Contact Me</Button>
             </motion.div>
         </div>
     )

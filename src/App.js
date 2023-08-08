@@ -16,7 +16,7 @@ function App() {
         <div className=" bg-black  w-full h-screen">
         <Home/>
         </div>
-         <div className=' '>
+         <div className='bg-gradient-to-b from-[#2b1055] to-[#7597de] '>
           <Parallax/>
          </div>
           <div className=' bg-black w-full h-screen'>

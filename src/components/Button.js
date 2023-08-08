@@ -3,7 +3,7 @@
 function Button (props) {
 
     return(
-    <button className= "bg-indigo-600 text-white font-[Poppins] py-2 px-6 rounded md:ml-8 hover:bg-indigo-400 duration 500">
+    <button className= "bg-[#03fcf8] text-Black hover:text-[#03fcf8]  font-bold py-2 px-6 rounded md:ml-8 hover:bg-black 500 border-2 border-gray-700">
         {props.children}
     </button>
     )
