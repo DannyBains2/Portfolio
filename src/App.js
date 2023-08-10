@@ -16,7 +16,7 @@ function App() {
         <div className=" bg-gradient-to-b from-[#2b1055] to-[#7597de]  w-full h-screen">
         <Home/>
         </div>
-         <div className='bg-[#1c0522] w-full h-screen border border-orange-500 flex items-center justify-center'>
+         <div className='bg-[#1c0522] w-full h-screen flex items-center justify-center  overflow-y-scroll md:overflow-none'>
           <Portfolio/>
          </div>
           <div className=' bg-black w-full h-screen'>
