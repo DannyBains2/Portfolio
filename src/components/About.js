@@ -19,7 +19,7 @@ export default function About () {
 
     return(
         <div className="w-full h-screen ">
-            <div className=" w-full h-1/4">
+            <div className=" w-full h-1/12 md:h-1/4 ">
                 <motion.div ref={ref} className="w-full h-full  flex "
                   variants={{
                     hidden: {opacity: 0, y: 75},
@@ -36,9 +36,9 @@ export default function About () {
               
                 </div>
 
-                <div className="w-full h-3/4   flex flex-col md:flex-row">
-                    <div className=" w-4/5 h-full p-1 flex flex-col items-center justify-center">
-                        <motion.div className="para-1 w-2/3 h-5/6   "
+                <div className="w-full h-3/4   flex flex-col md:flex-row ">
+                    <div className=" w-full md:w-4/5 h-full p-1 flex flex-col items-center justify-center text-[#64ffda] md:m-8 md:p-10 md:text-xl overflow-scroll md:overflow-auto">
+                        <motion.div className="para-1 w-full h-full   "
                         ref={ref}
                         variants={{
                             hidden: {opacity: 0, y: 75},
@@ -47,10 +47,10 @@ export default function About () {
                         initial="hidden"
                         animate={mainControls}
                         transition={{duration:0.5, delay: 0.4}}>
-                        
+                        this is what it does for this that and the other, this wht it wi van reall do when put to thing this is what it does for this that and the other, this wht it wi van reall do when put to thing this is what it does for this that and the other, this wht it wi van reall do when put to thing this is what it does for this that and the other, this wht it wi van reall do when put to thing this is what it does for this that and the other, this wht it wi van reall do when put to thing this is what it does for this that and the other, this wht it wi van reall do when put to thing this is what it does for this that and the other, this wht it wi van reall do when put to thing this is what it does for this that and the other, this wht it wi van reall do when put to thing this is what it does for this that and the other, this wht it wi van reall do when put to thing this is what it does for this that and the other, this wht it wi van reall do when put to thing this is what it does for this that and the other, this wht it wi van reall do when put to thing this is what it does for this that and the other, this wht it wi van reall do when put to thing
                         </motion.div>
                     </div>
-                    <div className="w-1/2 h-full flex md:flex-col">
+                    <div className="w-full md:w-1/2 h-full flex md:flex-col ">
                         <motion.div className="w-full h-1/2 "
                         ref={ref}
                         variants={{
@@ -62,9 +62,9 @@ export default function About () {
                         transition={{duration:0.5, delay: 0.55}}>
                         
                             <div className="header w-full h-1/5 " >
-                            <h2 className="text-white text-2xl px-2 py-1 bg-[#64ffda]/10 rounded-2xl">Development Skills:</h2>
+                            <h2 className="text-white text-lg md:text-2xl px-2 py-1 bg-[#64ffda]/10 rounded-2xl">Development Skills:</h2>
                             </div>
-                            <div className=" w-full h-4/5  px-2 py-2 ">
+                            <div className=" w-full h-4/5  px-2 py-2 m-1 ">
                                 <Tag></Tag>
                                 
                             </div>
@@ -80,9 +80,9 @@ export default function About () {
                         transition={{duration:0.5, delay: 0.7}}
                         >
                             <div className="header w-full h-1/5  ">
-                                <h2 className="text-white text-2xl px-2 py-1 bg-[#64ffda]/10 rounded-2xl">Planning Skills:</h2>
+                                <h2 className="text-white text-lg md:text-2xl px-2 py-1 bg-[#64ffda]/10 rounded-2xl">Planning Skills:</h2>
                             </div>
-                            <div className=" w-full h-4/5 px-2 py-2 ">
+                            <div className=" w-full h-4/5 px-2 py-2 m-1">
                               <SoftTag/>
                             </div>
                         </motion.div>

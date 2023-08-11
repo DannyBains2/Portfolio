@@ -21,7 +21,7 @@ function Home () {
         className="w-full h-screen overflow-hidden relative grid place-items-center">
 
 <motion.div
-        className="absolute inset-0 z-10 bg-[url('/src/images/moon_mountain/stars.png')]"
+        className="absolute inset-0 z-0 bg-[url('/src/images/moon_mountain/stars.png')]"
         style={{
         //   backgroundImage: `url(/full.jpg)`,
           backgroundPosition: "bottom",

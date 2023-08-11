@@ -1,8 +1,23 @@
-import { useRef } from 'react';
+
 import emailjs from '@emailjs/browser';
+import { motion, useInView, useAnimation } from "framer-motion";
+import { useEffect, useRef } from "react";
 
 function ContactMe () {
     const form = useRef();
+    const ref=useRef(null)
+    const isInView = useInView(ref, { once: true});
+
+    const mainControls = useAnimation()
+    const slideControls = useAnimation()
+    useEffect (() => {
+        if (isInView) {
+            mainControls.start("visable")
+            slideControls.start("visable")
+            // contactControls.start("visable")
+        } 
+    },[isInView]);
+
     const sendEmail = (e) => {
         e.preventDefault();
     
@@ -16,7 +31,7 @@ function ContactMe () {
     return(
             
      <div className="w-full h-full border-2 border-l-rose-700">
-        <div className=" w-full h-1/4">
+        <div className=" w-full h-1/12 md:h-1/4">
             <h2 className="text-white text-3xl md:text-8xl underline m-5">
             Contact
             </h2 >
@@ -25,7 +40,15 @@ function ContactMe () {
         <section class="bg-[#0a192f] dark:bg-gray-900">
   <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
       <p className="mb-8 lg:mb-16 font-light text-center text-white sm:text-xl">Got a question? Please get in touch.</p>
-      <form action="#" class="space-y-8">
+      <motion.form ref={ref} action="#" class="space-y-8"
+       variants={{
+        hidden: {opacity: 0, y: 75},
+        visable: {opacity: 1, y: 0},
+    }}
+    initial="hidden"
+    animate={mainControls}
+    transition={{duration:0.5, delay: 0.25}}>
+      
           
           <div>
               <label for="subject" class="block mb-2 text-sm font-medium text-white">Name</label>
@@ -43,7 +66,7 @@ function ContactMe () {
           </div>
 
           <button type="submit" className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:text-[#0a192f] hover:bg-[#64ffda]  border-2 ">Send message</button>
-      </form>
+      </motion.form>
   </div>
 </section>
         </div>

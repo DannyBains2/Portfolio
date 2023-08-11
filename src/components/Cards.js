@@ -18,7 +18,7 @@ export default function Cards({item, selected, setSelected}){
 
     return(
          
-            <motion.div layout ref={ref}  className=" w-5/6 md:h-auto bg-[#CA3CFF] shadow-xl shadow-white/10 rounded-xl overflow-hidden my-3"
+            <motion.div layout ref={ref}  className=" w-5/6  bg- shadow-xl shadow-white/10 rounded-xl hover:bg-[#64ffda]/10 overflow-hidden my-3"
             whileHover={{
                 scale: 1.05,
                 transition: {
@@ -40,15 +40,15 @@ export default function Cards({item, selected, setSelected}){
             
                 
                 />
-                <motion.div className="bg-white/50 p-4 m-2 rounded-xl text-white font-bold text-lg md:text-2xl ">
+                <motion.div className=" p-4 m-2 rounded-xl text-white font-bold text-lg md:text-2xl ">
                 {item.title}
             </motion.div>
-            <motion.div className="bg-white/50 p-4 m-2 rounded-xl ">
+            <motion.div className=" text-[#64ffda] p-4 m-2 rounded-xl ">
                 {item.subtitle}
             </motion.div>
                 <motion.div className="flex justify-between p-2">
-                <motion.button className="bg-[#03fcf8] text-Black hover:text-[#03fcf8]  font-bold py-2 px-6  rounded-2xl hover:bg-black 500 border-2 border-gray-700">Git Hub</motion.button>
-                <motion.button className="bg-[#03fcf8] text-Black hover:text-[#03fcf8]  font-bold py-2 px-6 rounded-2xl  hover:bg-black 500 border-2 border-gray-700">Visit Site</motion.button>
+                <button className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:text-[#0a192f] hover:bg-[#64ffda]  border-2">Git Hub</button>
+                <button className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:text-[#0a192f] hover:bg-[#64ffda]  border-2">Visit Site</button>
                 </motion.div>
             </motion.div>
 
@@ -64,12 +64,3 @@ export default function Cards({item, selected, setSelected}){
     )
 }
 
-// onClick={ () => setExpanded(!expanded)}
-// animate={{
-//     position: expanded ? "absolute": "static",
-//     // top: expanded ? "50%": "",
-//     // left: expanded ? "50%": "",
-//     width: expanded ? "40%": "",
-//     height: expanded ? "30%": "",
-//         }}
-//     transition={{ duration: 0, spring: 3}}

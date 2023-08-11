@@ -24,7 +24,7 @@ function Portfolio({}) {
                 },[isInView]);
 
     return(
-        <motion.div layout ref={ref} className="  w-5/6 h-5/6 rounded-xl grid grid-cols-1 md:grid-cols-3 place-items-center "
+        <motion.div layout ref={ref} className="  w-5/6 h-5/6 rounded-xl grid grid-cols-1 lg:grid-cols-3 place-items-center "
         variants={{
             hidden: {opacity: 0, x: -275},
             visable: {opacity: 1, x: 0},

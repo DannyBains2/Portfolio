@@ -10,28 +10,28 @@ function Navbar() {
         <div className=" font-bold text-5xl cursor-pointer flex items-center  text-gray-800">
         db
         </div>
-        <div onClick={()=>setOpen(!open)} className="text-3xl absolute right-8 top-6 cursor-pointer md:hidden">
+        <div onClick={()=>setOpen(!open)} className="text-3xl absolute right-8 top-6 cursor-pointer md:hidden ">
           {open? <HiXMark/> :<HiBars3/>}
         {/* <HiBars3 name={open ? "close":"menu"}/> */}
 
         </div>
-          <ul className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-[#ffffff] md:z-auto z-1 left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? "top-20 ": "top-[-490px]"} `}>
-            <li className=" p-2 md:ml-8 text-xl md:my-0 my-7 text-gray-800 hover:text-[#03fcf8] hover:bg-black duration-500 cursor-pointer rounded-md ">
+          <ul className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-[#ffffff] md:z-auto z-50 left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? "top-20 ": "top-[-490px]"} `}>
+            <li className=" p-2 md:ml-8 text-xl md:my-0 my-7 text-gray-800 hover:text-[#64ffda] hover:bg-black duration-500 cursor-pointer rounded-md ">
               <>
                 Home
               </>
             </li>
-            <li className=" p-2 md:ml-8 text-xl md:my-0 my-7 text-gray-800 hover:text-[#03fcf8] hover:bg-black duration-500 cursor-pointer rounded-md ">
+            <li className=" p-2 md:ml-8 text-xl md:my-0 my-7 text-gray-800 hover:text-[#64ffda] hover:bg-black duration-500 cursor-pointer rounded-md ">
               <>
                 Portfolio
               </>
             </li>
-            <li className=" p-2 md:ml-8 text-xl md:my-0 my-7 text-gray-800 hover:text-[#03fcf8] hover:bg-black duration-500 cursor-pointer rounded-md ">
+            <li className=" p-2 md:ml-8 text-xl md:my-0 my-7 text-gray-800 hover:text-[#64ffda] hover:bg-black duration-500 cursor-pointer rounded-md ">
               <>
               About
               </>
             </li>
-            <li className=" p-2 md:ml-8 text-xl md:my-0 my-7 text-gray-800 hover:text-[#03fcf8] hover:bg-black duration-500 cursor-pointer rounded-md">
+            <li className=" p-2 md:ml-8 text-xl md:my-0 my-7 text-gray-800 hover:text-[#64ffda] hover:bg-black duration-500 cursor-pointer rounded-md">
               <>
               Contact
               </>
