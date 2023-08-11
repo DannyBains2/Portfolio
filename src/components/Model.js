@@ -13,7 +13,7 @@ console.log(selected)
         className="fixed inset-0 bg-black/70 z-50 cursor-pointer overflow-y-scroll text-white ">
             <div className=" w-11/12  h-5/6 m-10  cursor-default border-amber-300 border-4 grid grid-cols-2  bg-[#CA3CFF]  rounded-xl">
                 <motion.div className=" w-full h-1/2 pl-3 pt-3 "
-                layoutId={`card-${selected.id}`} transition={{duration:0.2}}
+                layoutId={`card-${selected.id}`} 
                 >
                     <img className="rounded-xl" src={selected.img}  />
                 </motion.div>

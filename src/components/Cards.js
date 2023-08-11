@@ -47,8 +47,8 @@ export default function Cards({item, selected, setSelected}){
                 {item.subtitle}
             </motion.div>
                 <motion.div className="flex justify-between p-2">
-                <motion.button className="bg-[#03fcf8] text-Black hover:text-[#03fcf8]  font-bold py-2 px-6 rounded  hover:bg-black 500 border-2 border-gray-700">Git Hub</motion.button>
-                <motion.button className="bg-[#03fcf8] text-Black hover:text-[#03fcf8]  font-bold py-2 px-6 rounded  hover:bg-black 500 border-2 border-gray-700">Visit Site</motion.button>
+                <motion.button className="bg-[#03fcf8] text-Black hover:text-[#03fcf8]  font-bold py-2 px-6  rounded-2xl hover:bg-black 500 border-2 border-gray-700">Git Hub</motion.button>
+                <motion.button className="bg-[#03fcf8] text-Black hover:text-[#03fcf8]  font-bold py-2 px-6 rounded-2xl  hover:bg-black 500 border-2 border-gray-700">Visit Site</motion.button>
                 </motion.div>
             </motion.div>
 

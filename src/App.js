@@ -3,6 +3,7 @@ import './App.css';
 import Home from './components/Home';
 import Portfolio from './components/portfolio';
 import ContactMe from './components/ContactMe';
+import About from "./components/About"
 
 
 
@@ -13,13 +14,16 @@ function App() {
       <div>
       <Navbar></Navbar>
       </div>
-        <div className=" bg-gradient-to-b from-[#2b1055] to-[#7597de]  w-full h-screen">
+        <div className=" bg-gradient-to-b from-[#2b1055] to-[#7597de]  w-full h-screen border-b-2 border-[#64ffda]">
         <Home/>
         </div>
-         <div className='bg-[#233554] w-full h-screen flex items-center justify-center  overflow-y-scroll md:overflow-none'>
+         <div className='bg-[#0a192f] w-full h-screen flex items-center justify-center  overflow-y-scroll md:overflow-none border-b-2 border-[#64ffda]'>
           <Portfolio/>
          </div>
-          <div className=' bg-[#e5e1e7] w-full h-screen'>
+          <div className=' bg-[#0a192f] w-full h-screen border-b-2 border-[#64ffda]'>
+            <About></About>
+          </div>
+          <div className=' bg-[#0a192f] w-full h-screen '>
             <ContactMe></ContactMe>
           </div>
 
