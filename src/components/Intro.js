@@ -46,7 +46,7 @@ function Intro () {
             Junior Software Developer
             </motion.div>
             <motion.div
-             className=" pt-3 text-black  "
+             className=" pt-3 text-black flex justify-start "
              variants={{
                  hidden: {opacity: 0, x: -275},
                  visable: {opacity: 1, x: 0},
@@ -55,7 +55,7 @@ function Intro () {
              animate={mainControls}
              transition={{duration:1.25, delay: 1.25}}
             >
-            <Button >Contact Me</Button>
+            <Button className=" ">Contact Me</Button>
             </motion.div>
         </div>
     )
