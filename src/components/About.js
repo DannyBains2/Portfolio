@@ -37,7 +37,7 @@ export default function About () {
                 </div>
 
                 <div className="w-full h-3/4   flex flex-col md:flex-row ">
-                    <div className=" w-full md:w-4/5 h-full p-1 flex flex-col items-center justify-center text-[#64ffda] md:m-8 md:p-10 md:text-xl overflow-scroll md:overflow-auto">
+                    <div className=" w-full md:w-4/5 h-full p-1 flex flex-col items-center justify-center text-[#64ffda] md:m-8 md:pl-14 md:text-xl overflow-scroll md:overflow-auto">
                         <motion.div className="para-1 w-full h-full   "
                         ref={ref}
                         variants={{

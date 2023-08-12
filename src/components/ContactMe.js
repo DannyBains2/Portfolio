@@ -30,9 +30,9 @@ function ContactMe () {
       };
     return(
             
-     <div className="w-full h-full border-2 border-l-rose-700">
+     <div className="w-full h-full  ">
         <div className=" w-full h-1/12 md:h-1/4">
-            <h2 className="text-white text-3xl md:text-8xl underline m-5">
+            <h2 className="text-white text-3xl md:text-8xl underline p-5">
             Contact
             </h2 >
         </div>

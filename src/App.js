@@ -10,7 +10,7 @@ import About from "./components/About"
 
 function App() {
   return (
-    <div className=''>
+    <div className='text-gray-600 body-font font-Montserrat'>
       <div className=''>
       <Navbar></Navbar>
       </div>
