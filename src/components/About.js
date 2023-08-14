@@ -21,7 +21,7 @@ export default function About () {
     },[isInView]);
 
     return(
-        <div className="w-full h-screen ">
+        <div id = "about" className="w-full h-screen ">
             <div className=" w-full h-1/12 md:h-1/4 ">
                 <motion.div ref={ref} className="w-full h-full flex "
                   variants={{
@@ -37,10 +37,10 @@ export default function About () {
                     </h2>
                     </div>
                     <div className="  md:ml-16 md:w-2/3 flex justify-end items-center">
-                    <div className=" flex h-1/3">
-                <img src= {github}/>
-                <img src= {linkedin}/>
-                <img src= {twitter}/>
+                    <div className=" flex  bg-[#64ffda] border-2 border-green-400 rounded-xl overflow-hidden">
+                <img className=" hover:bg-[#14b8a6]" src= {github}/>
+                <img className=" hover:bg-[#14b8a6] " src= {linkedin}/>
+                <img className=" hover:bg-[#14b8a6] " src= {twitter}/>
                     </div>
                     </div>
                 </motion.div>

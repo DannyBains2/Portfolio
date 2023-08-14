@@ -1,6 +1,7 @@
 import { motion, useInView, useAnimation } from "framer-motion";
 import { useEffect, useRef } from "react";
 import Button from "./Button";
+import { Link } from "react-scroll"
 
 function Intro () {
     const ref=useRef(null)
@@ -55,7 +56,9 @@ function Intro () {
              animate={mainControls}
              transition={{duration:1.25, delay: 1.25}}
             >
+                <Link  to="contact" spy={true} smooth={true}>
             <button className= " ml-0 bg-[#0a192f] text-[#64ffda] hover:text-[#03fcf8] rounded-2xl font-bold py-2 px-6 hover:bg-black 500 border-2 border-[#64ffda] max-w-[150px]">Contact Me</button>
+            </Link>
             </motion.div>
         </div>
     )

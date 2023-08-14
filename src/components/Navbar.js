@@ -1,6 +1,7 @@
 import Button from "./Button";
 import { HiBars3, HiXMark } from "react-icons/hi2";
 import { useState } from "react";
+import { Link } from "react-scroll"
 
 function Navbar() {
   const [open, setOpen] = useState(false)
@@ -16,25 +17,22 @@ function Navbar() {
 
         </div>
           <ul className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-[#ffffff] md:z-auto z-50 left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? "top-20 ": "top-[-490px]"} `}>
+            
             <li className=" p-2 md:ml-8 text-xl md:my-0 my-7 text-gray-800 hover:text-[#64ffda] hover:bg-black duration-500 cursor-pointer rounded-md ">
-              <>
-                Home
-              </>
-            </li>
-            <li className=" p-2 md:ml-8 text-xl md:my-0 my-7 text-gray-800 hover:text-[#64ffda] hover:bg-black duration-500 cursor-pointer rounded-md ">
-              <>
+              
+            <Link  to="portfolio" spy={true} smooth={true}>
                 Portfolio
-              </>
+              </Link>
             </li>
             <li className=" p-2 md:ml-8 text-xl md:my-0 my-7 text-gray-800 hover:text-[#64ffda] hover:bg-black duration-500 cursor-pointer rounded-md ">
-              <>
-              About
-              </>
+            <Link  to="about" spy={true} smooth={true}>
+                About
+              </Link>
             </li>
             <li className=" p-2 md:ml-8 text-xl md:my-0 my-7 text-gray-800 hover:text-[#64ffda] hover:bg-black duration-500 cursor-pointer rounded-md">
-              <>
-              Contact
-              </>
+            <Link  to="contact" spy={true} smooth={true}>
+                Contact
+              </Link>
             </li >
             <div className=" flex min-w-70 ">
               <div>
