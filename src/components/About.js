@@ -36,8 +36,9 @@ export default function About () {
               
                 </div>
 
-                <div className="w-full h-3/4   flex flex-col md:flex-row ">
-                    <div className=" w-full md:w-4/5 h-full p-1 flex flex-col items-center justify-center text-[#64ffda] md:m-8 md:pl-14 md:text-xl overflow-scroll md:overflow-auto">
+                <div className="w-full h-3/4   flex flex-col md:flex-row">
+                    <div className=" w-full md:w-4/5 h-full flex flex-col  justify-center text-[#64ffda] lg:mx-10 md:text-xl overflow-scroll md:overflow-auto lg:overflow-visible">
+                        
                         <motion.div className="para-1 w-full h-full   "
                         ref={ref}
                         variants={{
@@ -47,7 +48,25 @@ export default function About () {
                         initial="hidden"
                         animate={mainControls}
                         transition={{duration:0.5, delay: 0.4}}>
-                        this is what it does for this that and the other, this wht it wi van reall do when put to thing this is what it does for this that and the other, this wht it wi van reall do when put to thing this is what it does for this that and the other, this wht it wi van reall do when put to thing this is what it does for this that and the other, this wht it wi van reall do when put to thing this is what it does for this that and the other, this wht it wi van reall do when put to thing this is what it does for this that and the other, this wht it wi van reall do when put to thing this is what it does for this that and the other, this wht it wi van reall do when put to thing this is what it does for this that and the other, this wht it wi van reall do when put to thing this is what it does for this that and the other, this wht it wi van reall do when put to thing this is what it does for this that and the other, this wht it wi van reall do when put to thing this is what it does for this that and the other, this wht it wi van reall do when put to thing this is what it does for this that and the other, this wht it wi van reall do when put to thing
+                            <h2 className="text-white text-lg md:text-2xl px-2 py-1 bg-[#64ffda]/10 rounded-2xl">Title1:</h2>
+                            <div className="px-4 py-1 text-sm md:text-lg">
+                        this is what it does for this that and thing this is what it does for this that and the other, this wht it wi van reall do when put to thing this is what it does for this that and the other, this wht it wi van reall do when put to thing this is what it does for this that and the other, this wht it wi van reall do when put to thing this is what it does for this that and the other, this wht it wi van reall do when put to thing this is what it does for this that and the other, this wht it wi van reall do when put to 
+                            </div>
+                        </motion.div>
+                        
+                        <motion.div className="para-1 w-full h-full   "
+                        ref={ref}
+                        variants={{
+                            hidden: {opacity: 0, y: 75},
+                            visable: {opacity: 1, y: 0},
+                        }}
+                        initial="hidden"
+                        animate={mainControls}
+                        transition={{duration:0.5, delay: 0.4}}>
+                            <h2 className="text-white text-lg md:text-2xl px-2 py-1 bg-[#64ffda]/10 rounded-2xl">Title2:</h2>
+                            <div className="px-4 py-1 text-sm md:text-lg">
+                        this is what it does for this that and thing this is what it does for this that and the other, this wht it wi van reall do when put to thing this is what it does for this that and the other, this wht it wi van reall do when put to thing this is what it does for this that and the other, this wht it wi van reall do when put to thing this is what it does for this that and the other, this wht it wi van reall do when put to thing this is what it does for this that and the other, this wht it wi van reall do when put to  
+                            </div>
                         </motion.div>
                     </div>
                     <div className="w-full md:w-1/2 h-full flex md:flex-col ">

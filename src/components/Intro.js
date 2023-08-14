@@ -22,7 +22,7 @@ function Intro () {
     return(
         <div ref={ref} className="flex flex-col pl-4 ">
             <motion.div 
-            className=" text-5xl md:text-8xl"
+            className=" text-5xl md:text-8xl drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] text-white"
             variants={{
                 hidden: {opacity: 0, y: 75},
                 visable: {opacity: 1, y: 0},
@@ -34,7 +34,7 @@ function Intro () {
             Hi, Im Danny
             </motion.div>
             <motion.div
-            className="text-3xl  md:text-6xl"
+            className="text-3xl  md:text-6xl drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] text-white"
             variants={{
                 hidden: {opacity: 0, y: 75},
                 visable: {opacity: 1, y: 0},
