@@ -36,10 +36,7 @@ export default function Cards({item, selected, setSelected}){
             <motion.div  layoutId={`card-${item.id}`} 
             transition={{duration:0}}
             className="w-full h-full  ">
-                <motion.img src={item.img} className="w-full h-1/2"
-            
-                
-                />
+                <motion.img src={item.img} className="w-full h-1/2"/>
                 <motion.div className=" p-4 m-2 rounded-xl text-white font-bold text-lg md:text-2xl ">
                 {item.title}
             </motion.div>

@@ -4,6 +4,7 @@ import Home from './components/Home';
 import Portfolio from './components/portfolio';
 import ContactMe from './components/ContactMe';
 import About from "./components/About"
+import AddIn from './components/AddIn';
 
 
 
