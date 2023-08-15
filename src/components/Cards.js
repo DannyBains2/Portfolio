@@ -44,8 +44,8 @@ export default function Cards({item, selected, setSelected}){
                 {item.subtitle}
             </motion.div>
                 <motion.div className="flex justify-between p-2">
-                <button className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:text-[#0a192f] hover:bg-[#64ffda]  border-2">Git Hub</button>
-                <button className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:text-[#0a192f] hover:bg-[#64ffda]  border-2">Visit Site</button>
+                <button className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:text-[#0a192f] hover:bg-[#64ffda]  border-2" onClick={() => window.open(`${item.url}`)}>Git Hub</button>
+                <button className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:text-[#0a192f] hover:bg-[#64ffda]  border-2" onClick={() => window.open(`${item.hub}`)}>Visit Site</button>
                 </motion.div>
             </motion.div>
 

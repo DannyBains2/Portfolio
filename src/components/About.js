@@ -59,9 +59,9 @@ export default function About () {
                         initial="hidden"
                         animate={mainControls}
                         transition={{duration:0.5, delay: 0.4}}>
-                            <h2 className="text-white text-lg md:text-2xl px-2 py-1 bg-[#64ffda]/10 rounded-2xl">Title1:</h2>
+                            <h2 className="text-white text-lg md:text-2xl px-2 py-1 bg-[#64ffda]/10 rounded-2xl">About me:</h2>
                             <div className="px-4 py-1 text-sm md:text-lg">
-                        this is what it does for this that and thing this is what it does for this that and the other, this wht it wi van reall do when put to thing this is what it does for this that and the other, this wht it wi van reall do when put to thing this is what it does for this that and the other, this wht it wi van reall do when put to thing this is what it does for this that and the other, this wht it wi van reall do when put to thing this is what it does for this that and the other, this wht it wi van reall do when put to 
+                            Ever since I can remember ive had a love for all things tech, as a 12 year old I was building my own pcs, later experimenting with the Raspberry Pi on various personnal projects, to recently building my own crypto currency mining machine. So about a year ago I decided on a career change to an industry i would love to be a part of and joined an intensive full-stack coding bootcamp, where I fell in love with all things code.
                             </div>
                         </motion.div>
                         
@@ -74,9 +74,9 @@ export default function About () {
                         initial="hidden"
                         animate={mainControls}
                         transition={{duration:0.5, delay: 0.4}}>
-                            <h2 className="text-white text-lg md:text-2xl px-2 py-1 bg-[#64ffda]/10 rounded-2xl">Title2:</h2>
+                            <h2 className="text-white text-lg md:text-2xl px-2 py-1 bg-[#64ffda]/10 rounded-2xl">About my Development:</h2>
                             <div className="px-4 py-1 text-sm md:text-lg">
-                        this is what it does for this that and thing this is what it does for this that and the other, this wht it wi van reall do when put to thing this is what it does for this that and the other, this wht it wi van reall do when put to thing this is what it does for this that and the other, this wht it wi van reall do when put to thing this is what it does for this that and the other, this wht it wi van reall do when put to thing this is what it does for this that and the other, this wht it wi van reall do when put to  
+                            I leverage tools like Figma to breathe life into my ideas.  My emphasis on UX/UI design ensures that every interaction is carefully crafted to enhance user satisfaction and drive engagement. For efficient project management, I'm a firm believer in the power of agile methodologies. Kanban boards keep me organized, allowing me to adapt to evolving requirements. JavaScript is my go-to language, and I harness the capabilities of React.js and Next.js to create responsive, performant, and highly interactive front-end experiences. I incorporate comprehensive testing using Jest for unit testing, Supertest for API testing, and Cypress for end-to-end testing. This rigorous testing regimen guarantees that the final product not only meets functional requirements but also delivers a smooth user experience.
                             </div>
                         </motion.div>
                     </div>
