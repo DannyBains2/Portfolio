@@ -18,7 +18,7 @@ export default function Cards({item, selected, setSelected}){
 
     return(
          
-            <motion.div layout ref={ref}  className=" w-5/6  bg- shadow-xl shadow-white/10 rounded-xl hover:bg-[#64ffda]/10 overflow-hidden my-3"
+            <motion.div layout ref={ref}  className=" w-5/6 shadow-xl shadow-white/10 rounded-xl hover:bg-[#64ffda]/10 overflow-hidden my-2"
             whileHover={{
                 scale: 1.05,
                 transition: {
@@ -44,8 +44,8 @@ export default function Cards({item, selected, setSelected}){
                 {item.subtitle}
             </motion.div>
                 <motion.div className="flex justify-between p-2">
-                <button className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:text-[#0a192f] hover:bg-[#64ffda]  border-2" onClick={() => window.open(`${item.url}`)}>Git Hub</button>
-                <button className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:text-[#0a192f] hover:bg-[#64ffda]  border-2" onClick={() => window.open(`${item.hub}`)}>Visit Site</button>
+                <button className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:text-[#0a192f] hover:bg-[#64ffda]  border-2" onClick={() => window.open(`${item.hub}`)}>Git Hub</button>
+                <button className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:text-[#0a192f] hover:bg-[#64ffda]  border-2" onClick={() => window.open(`${item.url}`)}>Visit Site</button>
                 </motion.div>
             </motion.div>
 

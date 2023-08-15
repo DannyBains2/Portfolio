@@ -38,8 +38,8 @@ export default function About () {
                     </div>
                     <div className="  md:ml-16 md:w-2/3 flex justify-end items-center">
                     <div className=" flex  bg-[#64ffda] border-2 border-green-400 rounded-xl overflow-hidden">
-                <img className=" hover:bg-[#14b8a6]" src= {github}/>
-                <img className=" hover:bg-[#14b8a6] " src= {linkedin}/>
+                <img onClick={() => window.open(`https://github.com/DannyBains2`)} className=" hover:bg-[#14b8a6]" src= {github}/>
+                <img onClick={() => window.open(`https://www.linkedin.com/in/dhanveer-bains-1b7805256/`)} className=" hover:bg-[#14b8a6] " src= {linkedin}/>
                 <img className=" hover:bg-[#14b8a6] " src= {twitter}/>
                     </div>
                     </div>
