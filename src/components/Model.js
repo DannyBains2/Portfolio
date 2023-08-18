@@ -18,7 +18,7 @@ console.log(selected.tech)
                     <img className="rounded-xl" src={selected.img}  />
                 </motion.div>
                 <div  className=" w-full grid place-items-center overflow-hidden">
-                    <div className="w-10/12  p-6 rounded-2xl text-[#64ffda]">
+                    <div className="w-10/12 h-full  p-6 rounded-2xl text-[#64ffda] overflow-auto">
                     {selected.message}
                     </div>
                 </div>

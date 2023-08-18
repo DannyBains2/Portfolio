@@ -22,7 +22,7 @@ export default function About () {
 
     return(
         <div id = "about" className="w-full h-screen ">
-            <div className=" w-full h-1/12 md:h-1/4 ">
+            <div className=" w-full h-1/12 md:h-1/5  ">
                 <motion.div ref={ref} className="w-full h-full flex "
                   variants={{
                     hidden: {opacity: 0, y: 75},
@@ -31,7 +31,7 @@ export default function About () {
                 initial="hidden"
                 animate={mainControls}
                 transition={{duration:0.5, delay: 0.25}}>
-                    <div className="  ">
+                    <div className=" h- ">
                     <h2 className="text-white text-3xl md:text-8xl underline m-5">
                         About.
                     </h2>
@@ -48,7 +48,7 @@ export default function About () {
                 </div>
 
                 <div className="w-full h-3/4   flex flex-col md:flex-row">
-                    <div className=" w-full md:w-4/5 h-full flex flex-col  justify-center text-[#64ffda] lg:mx-10 md:text-xl overflow-scroll md:overflow-auto lg:overflow-visible">
+                    <div className="  w-full md:w-4/5  flex flex-col  justify-center text-[#64ffda] lg:mx-10 md:text-xl  ">
                         
                         <motion.div className="para-1 w-full h-full   "
                         ref={ref}
@@ -75,8 +75,8 @@ export default function About () {
                         animate={mainControls}
                         transition={{duration:0.5, delay: 0.4}}>
                             <h2 className="text-white text-lg md:text-2xl px-2 py-1 bg-[#64ffda]/10 rounded-2xl">About my Development:</h2>
-                            <div className="px-4 py-1 text-sm md:text-lg">
-                            I leverage tools like Figma to breathe life into my ideas.  My emphasis on UX/UI design ensures that every interaction is carefully crafted to enhance user satisfaction and drive engagement. For efficient project management, I'm a firm believer in the power of agile methodologies. Kanban boards keep me organized, allowing me to adapt to evolving requirements. JavaScript is my go-to language, and I harness the capabilities of React.js and Next.js to create responsive, performant, and highly interactive front-end experiences. I incorporate comprehensive testing using Jest for unit testing, Supertest for API testing, and Cypress for end-to-end testing. This rigorous testing regimen guarantees that the final product not only meets functional requirements but also delivers a smooth user experience.
+                            <div className="px-4 py-1 text-sm md:text-lg h-full">
+                            I leverage tools like Figma to breathe life into my ideas.  My emphasis on UX/UI design ensures that every interaction is carefully crafted to enhance user satisfaction and drive engagement. For efficient project management, I'm a firm believer in the power of agile methodologies. Kanban boards keep me organized, allowing me to adapt to evolving requirements. JavaScript is my go-to language, and I harness the capabilities of React.js and Next.js to create responsive, performant, and highly interactive front-end experiences. I incorporate comprehensive testing using Jest for unit testing, Supertest for API testing, and Cypress for end-to-end testing.
                             </div>
                         </motion.div>
                     </div>
