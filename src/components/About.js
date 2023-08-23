@@ -8,7 +8,7 @@ import twitter from "../images/twitter.png"
 
 export default function About () {
     const ref=useRef(null)
-    const isInView = useInView(ref, { once: true});
+    const isInView = useInView(ref, { once: false});
 
     const mainControls = useAnimation()
     const slideControls = useAnimation()
@@ -22,7 +22,7 @@ export default function About () {
 
     return(
         <div id = "about" className="w-full h-screen ">
-            <div className=" w-full h-1/12 md:h-1/5  ">
+            <div className=" w-full h-1/12 md:h-1/12  ">
                 <motion.div ref={ref} className="w-full h-full flex "
                   variants={{
                     hidden: {opacity: 0, y: 75},
@@ -31,8 +31,8 @@ export default function About () {
                 initial="hidden"
                 animate={mainControls}
                 transition={{duration:0.5, delay: 0.25}}>
-                    <div className=" h- ">
-                    <h2 className="text-white text-3xl md:text-8xl underline m-5">
+                    <div className=" md:h  ">
+                    <h2 className="text-white text-3xl md:text-5xl lg:text-8xl underline m-5">
                         About.
                     </h2>
                     </div>
@@ -47,8 +47,8 @@ export default function About () {
               
                 </div>
 
-                <div className="w-full h-3/4   flex flex-col md:flex-row">
-                    <div className="  w-full md:w-4/5  flex flex-col  justify-center text-[#64ffda] lg:mx-10 md:text-xl  ">
+                <div className="w-full h-3/4 flex flex-col lg:flex-row overflow-scroll">
+                    <div className="  w-full md:w-4/5 flex flex-col  justify-center text-[#64ffda] lg:mx-10 md:text-xl  ">
                         
                         <motion.div className="para-1 w-full h-full   "
                         ref={ref}

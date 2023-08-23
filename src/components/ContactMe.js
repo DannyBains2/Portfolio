@@ -37,14 +37,17 @@ function ContactMe () {
       };
 
 function handleClick (){
+    if(input1.length > 0 && input2.length > 0 ){
     setTimeout(() => {
         setInput1("")
         setInput2("")
         setInput3("")
         alert("Thank you. Your message has been sent.")
-      }, "1000")
+      }, "1000")}
    
 }
+
+
 
     return(
             
