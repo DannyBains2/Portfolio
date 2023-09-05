@@ -16,7 +16,7 @@ function Typing () {
         <div className=" md:p-5 max-w-5xl text-2xl font-bold">
     <Typewriter
     onInit={(typewriter) => {
-      typewriter.typeString('Im a software developer working mainly with Javascript and JS frameworks such as ReactJs and NextJs on the frontend and Nodejs on the backend, using SQL to make database quieries... Please Scroll Down...')
+      typewriter.typeString('Skills: JavaScript, React.Js, Next.Js, Node.Js, PostgreSQL, Express Js, Css, Tailwind Css and HTML.  Please Scroll Down...')
         
         .pauseFor(2500)
         

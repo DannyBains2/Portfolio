@@ -61,7 +61,7 @@ export default function About () {
                         transition={{duration:0.5, delay: 0.4}}>
                             <h2 className="text-white text-lg md:text-2xl px-2 py-1 bg-[#64ffda]/10 rounded-2xl">About me:</h2>
                             <div className="px-4 py-1 text-sm md:text-lg">
-                            Ever since I can remember ive had a love for all things tech, as a 12 year old I was building my own pcs, later experimenting with the Raspberry Pi on various personnal projects, to recently building my own crypto currency mining machine. So about a year ago I decided on a career change to an industry i would love to be a part of and joined an intensive full-stack coding bootcamp, where I fell in love with all things code.
+                            Ever since I can remember ive had a love for all things tech, as a 12 year old I was building my own pcs, later experimenting with the Raspberry Pi on various personnal projects, to recently building my own crypto currency mining machines. So about a year ago I decided on a career change to an industry I would love to be a part of and joined an intensive full-stack coding bootcamp, where I fell in love with all things code.
                             </div>
                         </motion.div>
                         
